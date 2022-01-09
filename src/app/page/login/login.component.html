@@ -1,0 +1,27 @@
+
+<div class="col-md-6 offset-md-3">   
+    <div class="container md-5">
+      <div class="login">
+        <div class="login-header">
+          <h3>LOGIN</h3>
+          <p>Please enter your credentials to login.</p>
+        </div>
+      </div>
+      <form (ngSubmit)="onSubmit()">
+        <div class="form-group">
+            <label form=""> Name : </label>
+            <input type="text" placeholder="username"  [(ngModel)] = "userName" name="username" style="margin-left: 30px;"> 
+        </div>
+        <div class="form-group">
+            <label> Password :</label>
+            <input type="password" placeholder="password" [(ngModel)] = "password" name="password" style="margin-left: 10px;">
+        </div>
+        <div style="background-color: red;" class="form-group">
+           {{error}}
+        </div>
+        <div class="form-group" style="margin-top: 10px;">
+            <button class="btn btn-success" type="submit">Submit</button>
+        </div>
+      </form>
+    </div>
+  </div>

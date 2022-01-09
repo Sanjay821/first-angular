@@ -1,0 +1,27 @@
+<nav class="navbar navbar-expand-sm bg-primary navbar-dark">
+
+  <ul class = "navbar-nav">
+    <li class="nav-item">
+      <a routerLink="" routerLinkActive="active" class="nav-link"> Employee List</a>
+    </li>
+    <li class="nav-item">
+      <a routerLink="employee/add" routerLinkActive="active" class="nav-link"> Add Employee</a>
+    </li>
+    <li class="nav-item">
+      <a routerLink="employee/edit" routerLinkActive="active" class="nav-link"> Edit Employee</a>
+    </li>
+  </ul>
+</nav>
+
+
+
+<h1 class="text-center">{{title}}</h1>
+<div class="container">
+  <router-outlet> </router-outlet>
+</div>
+
+<footer class="footer">
+  <div class="container">
+    <span>All RIGHT RESERVED @SANJAY</span>
+  </div>
+</footer>
